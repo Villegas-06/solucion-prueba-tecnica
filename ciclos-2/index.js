@@ -1,23 +1,33 @@
-
+//21,4,10,3,6
 var i = 1;
+var cp = 0;
+var ci = 0;
+var sp = 0;
 
-while(i <= 5){
 
-    var n = [21,4,10,3,6];
-
-    if(n %2==0){
-        var sp = sp+n;
-        var cp = cp+1;
-      }else{
-       var ci = ci+1;
-         }
-
-    i = i+1;
+while( i <= 5){
+  var n = 0;
+  var n = prompt('ingrese los números: ');
+  console.log(n);
+  
+  if (n % 2 == 0){
+      sp = sp + n;
+      cp = cp + 1;
+      
+  }else{
+      ci = ci + 1;
+  }
+ i++
 }
-console.log(ci/(ci+cp));
-if(cp != 0){
-console.log(sp/cp);
-}
+console.log("i: " + i);
+console.log("ci:" + ci); 
+console.log("cp: " + cp);
+console.log("sp: " + sp);
 
-console.log(cp);
-console.log(sp);
+console.log(ci + "/" + (ci + cp));
+
+if (cp != 0){
+  console.log(sp + "/" + cp);
+} 
+
+
