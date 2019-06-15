@@ -6,12 +6,12 @@ var sp = 0;
 
 
 while( i <= 5){
-  var n = 0;
-  var n = prompt('ingrese los números: ');
-  console.log(n);
-  
+
+  n = prompt("ingrese los números");
+
   if (n % 2 == 0){
-      sp = sp + n;
+
+      sp = parseInt(sp) + parseInt(n);
       cp = cp + 1;
       
   }else{
@@ -20,7 +20,7 @@ while( i <= 5){
  i++
 }
 console.log("i: " + i);
-console.log("ci:" + ci); 
+console.log("ci: " + ci); 
 console.log("cp: " + cp);
 console.log("sp: " + sp);
 
